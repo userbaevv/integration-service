@@ -1,0 +1,22 @@
+server:
+  port: 8480
+  max-http-header-size: ${HEADER_SIZE:16384}
+
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  application:
+    name: gbdul-service
+  info:
+    name: gbdul-service
+    description: ${project.description}
+    version: ${project.version}
+kz:
+  shep:
+    url: http://172.19.24.182/bip-sync-wss-gost/
+    certPath: /cert/GOST512_32512fa734018ea21201bfc42ddeeb25f50edb4a.p12
+    certPassword: Mu123456
+    username: IISSK
+    password: zxc123+-
+    bin: 960640000436

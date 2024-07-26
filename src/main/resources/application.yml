@@ -1,0 +1,9 @@
+server:
+  port: 8480
+  max-http-header-size: ${HEADER_SIZE:16384}
+
+spring:
+  application:
+    name: gbdul-service
+  profiles:
+    active: prod

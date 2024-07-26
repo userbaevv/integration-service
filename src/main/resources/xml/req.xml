@@ -1,0 +1,107 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"
+            xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                       xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:SignedInfo>
+                    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gost34310-gost34311"/>
+                    <ds:Reference URI="#id-35046701-4e83-461e-90b4-7a7fb27ea52f">
+                        <ds:Transforms>
+                            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        </ds:Transforms>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gost34311"/>
+                        <ds:DigestValue>NZWaS6yyynlLIMxJUhJ02OuNMRf02UcUB3tbFwUxmuk=</ds:DigestValue>
+                    </ds:Reference>
+                </ds:SignedInfo>
+                <ds:SignatureValue>
+                    GHW3BSMBND+7zPJ2iIN7TynCJzoncC7apOAgpkEyxvBxwG7CRcnWQdHlzRLTqyXaZbtMC4HZKBC/
+                    poo+gJOPew==
+                </ds:SignatureValue>
+                <ds:KeyInfo>
+                    <wsse:SecurityTokenReference>
+                        <wsse:KeyIdentifier
+                                EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary"
+                                ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3">
+                            MIIEzzCCBHmgAwIBAgIUMlVP1an5WtqvIS7gVdgKBiwfnYMwDQYJKoMOAwoBAQECBQAwUzELMAkGA1UEBhMCS1oxRDBCBgNVBAMMO9Kw0JvQotCi0KvSmiDQmtCj05jQm9CQ0J3QlNCr0KDQo9Co0Ksg0J7QoNCi0JDQm9Cr0pogKEdPU1QpMB4XDTIzMTIxMjA5Mzk0NFoXDTI0MTIxMTA5Mzk0NFowggFWMSIwIAYDVQQDDBnQpdCQ0JrQmNCcINCR0JDSmtCi0JjQr9CgMRMwEQYDVQQEDArQpdCQ0JrQmNCcMRgwFgYDVQQFEw9JSU44NDAxMjczMDE0MDQxCzAJBgNVBAYTAktaMYGZMIGWBgNVBAoMgY7Qk9C+0YHRg9C00LDRgNGB0YLQstC10L3QvdC+0LUg0YPRh9GA0LXQttC00LXQvdC40LUgItCS0YvRgdGI0LDRjyDQsNGD0LTQuNGC0L7RgNGB0LrQsNGPINC/0LDQu9Cw0YLQsCDQoNC10YHQv9GD0LHQu9C40LrQuCDQmtCw0LfQsNGF0YHRgtCw0L0iMRgwFgYDVQQLDA9CSU45NjA2NDAwMDA0MzYxGTAXBgNVBCoMENCl0JDQmtCY0JzSsNCb0KsxIzAhBgkqhkiG9w0BCQEWFGIua2hha2ltQGVzZXAuZ292Lmt6MGwwJQYJKoMOAwoBAQEBMBgGCiqDDgMKAQEBAQEGCiqDDgMKAQMBAQADQwAEQBoObEP3XPD5d2MSqQC7v5iaHY+RlLOhUyQE5e9YVsFLPWtLeqw62QLk8FK5TwpooDJvC0UHjM4+ogcZuLJofsujggIOMIICCjAOBgNVHQ8BAf8EBAMCBsAwMwYDVR0lBCwwKgYIKwYBBQUHAwQGCCqDDgMDBAECBgkqgw4DAwQBAgUGCSqDDgMDBAMCATBeBgNVHSAEVzBVMFMGByqDDgMDAgEwSDAhBggrBgEFBQcCARYVaHR0cDovL3BraS5nb3Yua3ovY3BzMCMGCCsGAQUFBwICMBcMFWh0dHA6Ly9wa2kuZ292Lmt6L2NwczBYBgNVHR8EUTBPME2gS6BJhiJodHRwOi8vY3JsLnBraS5nb3Yua3ovbmNhX2dvc3QuY3JshiNodHRwOi8vY3JsMS5wa2kuZ292Lmt6L25jYV9nb3N0LmNybDBcBgNVHS4EVTBTMFGgT6BNhiRodHRwOi8vY3JsLnBraS5nb3Yua3ovbmNhX2RfZ29zdC5jcmyGJWh0dHA6Ly9jcmwxLnBraS5nb3Yua3ovbmNhX2RfZ29zdC5jcmwwYwYIKwYBBQUHAQEEVzBVMC8GCCsGAQUFBzAChiNodHRwOi8vcGtpLmdvdi5rei9jZXJ0L25jYV9nb3N0LmNlcjAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AucGtpLmdvdi5rejAdBgNVHQ4EFgQUslVP1an5WtqvIS7gVdgKBiwfnYMwDwYDVR0jBAgwBoAEW2pz6TAWBgYqgw4DAwUEDDAKBggqgw4DAwUBATANBgkqgw4DCgEBAQIFAANBAMic8Qm9UF6fFErwbK4IdVxqcDQqff1XEppmPGjzh4ELMvam0T8B+3EIGU2UT4gh3H9Pf4jdO0N/Vdp87ne8nIE=
+                        </wsse:KeyIdentifier>
+                    </wsse:SecurityTokenReference>
+                </ds:KeyInfo>
+            </ds:Signature>
+        </wsse:Security>
+    </SOAP-ENV:Header>
+    <S:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+            wsu:Id="id-35046701-4e83-461e-90b4-7a7fb27ea52f">
+        <ns2:SendMessage xmlns:ns2="http://bip.bee.kz/SyncChannel/v10/Types">
+            <request>
+                <requestInfo>
+                    <messageId>bff8e7ba-bd44-4cfd-942c-c6a7367e14b4</messageId>
+                    <serviceId>GbdulInfoByBin_v2</serviceId>
+                    <messageDate>2024-07-24T17:04:58.622+05:00</messageDate>
+                    <sender>
+                        <senderId>IISSK</senderId>
+                        <password>zxc123+-</password>
+                    </sender>
+                    <sessionId>1280244d-e37f-4ec4-a66b-0317e07bb79e</sessionId>
+                </requestInfo>
+                <requestData>
+                    <data xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">&lt;?xml
+                        version="1.0" encoding="UTF-8"?&gt;&lt;ns3:Request
+                        xmlns:ns3="http://gbdulinfobybin_v2.egp.gbdul.tamur.kz"
+                        xmlns:ns2="http://www.w3.org/2000/09/xmldsig#"&gt;&#13;
+                        &lt;RequestorBIN&gt;960640000436&lt;/RequestorBIN&gt;&#13;
+                        &lt;BIN&gt;201040000013&lt;/BIN&gt;&#13;
+                        &lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;&#13;
+                        &lt;ds:SignedInfo&gt;&#13;
+                        &lt;ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;&#13;
+                        &lt;ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gost34310-gost34311"/&gt;&#13;
+                        &lt;ds:Reference URI=""&gt;&#13;
+                        &lt;ds:Transforms&gt;&#13;
+                        &lt;ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/&gt;&#13;
+                        &lt;ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/&gt;&#13;
+                        &lt;/ds:Transforms&gt;&#13;
+                        &lt;ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gost34311"/&gt;&#13;
+                        &lt;ds:DigestValue&gt;L4nVkQYIX2rEeGLA/rZaAKByz8UhtwpPcNYL+A+bhao=&lt;/ds:DigestValue&gt;&#13;
+                        &lt;/ds:Reference&gt;&#13;
+                        &lt;/ds:SignedInfo&gt;&#13;
+                        &lt;ds:SignatureValue&gt;&#13;
+                        JhL0LVQ0XWdWSpfVN2zuHb5TxAR7LKt0dnDXiWgkESJu1j/hDPg78qKBQgVqb9/4oWiqE9xZonxR&#13;
+                        +yf4l03AEw==&#13;
+                        &lt;/ds:SignatureValue&gt;&#13;
+                        &lt;ds:KeyInfo&gt;&#13;
+                        &lt;ds:X509Data&gt;&#13;
+                        &lt;ds:X509Certificate&gt;&#13;
+                        MIIEzzCCBHmgAwIBAgIUMlVP1an5WtqvIS7gVdgKBiwfnYMwDQYJKoMOAwoBAQECBQAwUzELMAkG&#13;
+                        A1UEBhMCS1oxRDBCBgNVBAMMO9Kw0JvQotCi0KvSmiDQmtCj05jQm9CQ0J3QlNCr0KDQo9Co0Ksg&#13;
+                        0J7QoNCi0JDQm9Cr0pogKEdPU1QpMB4XDTIzMTIxMjA5Mzk0NFoXDTI0MTIxMTA5Mzk0NFowggFW&#13;
+                        MSIwIAYDVQQDDBnQpdCQ0JrQmNCcINCR0JDSmtCi0JjQr9CgMRMwEQYDVQQEDArQpdCQ0JrQmNCc&#13;
+                        MRgwFgYDVQQFEw9JSU44NDAxMjczMDE0MDQxCzAJBgNVBAYTAktaMYGZMIGWBgNVBAoMgY7Qk9C+&#13;
+                        0YHRg9C00LDRgNGB0YLQstC10L3QvdC+0LUg0YPRh9GA0LXQttC00LXQvdC40LUgItCS0YvRgdGI&#13;
+                        0LDRjyDQsNGD0LTQuNGC0L7RgNGB0LrQsNGPINC/0LDQu9Cw0YLQsCDQoNC10YHQv9GD0LHQu9C4&#13;
+                        0LrQuCDQmtCw0LfQsNGF0YHRgtCw0L0iMRgwFgYDVQQLDA9CSU45NjA2NDAwMDA0MzYxGTAXBgNV&#13;
+                        BCoMENCl0JDQmtCY0JzSsNCb0KsxIzAhBgkqhkiG9w0BCQEWFGIua2hha2ltQGVzZXAuZ292Lmt6&#13;
+                        MGwwJQYJKoMOAwoBAQEBMBgGCiqDDgMKAQEBAQEGCiqDDgMKAQMBAQADQwAEQBoObEP3XPD5d2MS&#13;
+                        qQC7v5iaHY+RlLOhUyQE5e9YVsFLPWtLeqw62QLk8FK5TwpooDJvC0UHjM4+ogcZuLJofsujggIO&#13;
+                        MIICCjAOBgNVHQ8BAf8EBAMCBsAwMwYDVR0lBCwwKgYIKwYBBQUHAwQGCCqDDgMDBAECBgkqgw4D&#13;
+                        AwQBAgUGCSqDDgMDBAMCATBeBgNVHSAEVzBVMFMGByqDDgMDAgEwSDAhBggrBgEFBQcCARYVaHR0&#13;
+                        cDovL3BraS5nb3Yua3ovY3BzMCMGCCsGAQUFBwICMBcMFWh0dHA6Ly9wa2kuZ292Lmt6L2NwczBY&#13;
+                        BgNVHR8EUTBPME2gS6BJhiJodHRwOi8vY3JsLnBraS5nb3Yua3ovbmNhX2dvc3QuY3JshiNodHRw&#13;
+                        Oi8vY3JsMS5wa2kuZ292Lmt6L25jYV9nb3N0LmNybDBcBgNVHS4EVTBTMFGgT6BNhiRodHRwOi8v&#13;
+                        Y3JsLnBraS5nb3Yua3ovbmNhX2RfZ29zdC5jcmyGJWh0dHA6Ly9jcmwxLnBraS5nb3Yua3ovbmNh&#13;
+                        X2RfZ29zdC5jcmwwYwYIKwYBBQUHAQEEVzBVMC8GCCsGAQUFBzAChiNodHRwOi8vcGtpLmdvdi5r&#13;
+                        ei9jZXJ0L25jYV9nb3N0LmNlcjAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AucGtpLmdvdi5rejAd&#13;
+                        BgNVHQ4EFgQUslVP1an5WtqvIS7gVdgKBiwfnYMwDwYDVR0jBAgwBoAEW2pz6TAWBgYqgw4DAwUE&#13;
+                        DDAKBggqgw4DAwUBATANBgkqgw4DCgEBAQIFAANBAMic8Qm9UF6fFErwbK4IdVxqcDQqff1XEppm&#13;
+                        PGjzh4ELMvam0T8B+3EIGU2UT4gh3H9Pf4jdO0N/Vdp87ne8nIE=&#13;
+                        &lt;/ds:X509Certificate&gt;&#13;
+                        &lt;/ds:X509Data&gt;&#13;
+                        &lt;/ds:KeyInfo&gt;&#13;
+                        &lt;/ds:Signature&gt;&lt;/ns3:Request&gt;
+                    </data>
+                </requestData>
+            </request>
+        </ns2:SendMessage>
+    </S:Body>
+</S:Envelope>

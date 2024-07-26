@@ -1,0 +1,57 @@
+{
+  "Notice": {
+    "SystemId": "10002",
+    "RequestId": "765678909765789",
+    "RequestDate": "2023-11-11T15:25:09.910+06:00",
+    "MessageType": "M_TYPE_EXECUTORS_CHANGED",
+    "Message": {
+      "CheckId": "5780817",
+      "Note": "Прочие отметки",
+      "Faces": [
+        {
+          "IIN": "921106350879",
+          "Person": {
+            "LastName": "Курмашев",
+            "FirstName": "Мирас",
+            "PositionRU": "Руководитель управления",
+            "PositionKK": "Бас маман"
+          },
+          "OrganizationNameRU": "Служба внутреннего аудита МФ РК",
+          "OrganizationNameKK": "Қазақстан Республикасы Қаржы министрлігінің Ішкі аудит қызметі",
+          "Phone": "735400"
+        },
+        {
+        }
+      ],
+      "Experts": [
+        {
+          "BIN": "123456789089",
+          "Expert": {
+            "IIN": "930623300685",
+            "Person": {
+              "LastName": "Насипкалиев",
+              "FirstName": "Айболат",
+              "PositionRU": "Главный специалист",
+              "PositionKK": "Бас маман"
+            },
+            "OrganizationNameRU": "Служба внутреннего аудита МФ РК",
+            "OrganizationNameKK": "Қазақстан Республикасы Қаржы министрлігінің Ішкі аудит қызметі",
+            "Phone": "123123"
+          }
+        }
+      ],
+      "FilesContent": [
+        {
+          "FileName": "name.txt",
+          "MimeType": "text/plain",
+          "File": "aGVsbG9vbykpCg=="
+        },
+        {
+          "FileName": "secondname.txt",
+          "MimeType": "text/plain",
+          "File": "aGVsbG9vbykpCg=="
+        }
+      ]
+    }
+  }
+}
